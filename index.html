@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PrintMania - Lista de Pedido</title>
+</head>
+<body class="fundoColorido">
+    <h2>PrintMania</h2>
+
+    <div class="modeloAdesivo">
+        <label id="titleAdesivoPerson">Adesivos Personalizados</label>
+        <select name="adesivoPersonal" id="advQuadradoBorda">
+            <option value="">Quadrado com bordas</option>
+            <option value="">Quadrado sem bordas</option>
+            <option value="">Redondo</option>
+        </select>
+        <!-- <p></p>
+        <h3>Total: <span id="valorTotal">R$0.00</span></h3> -->
+        
+        <p></p>
+        
+    </div>
+        <p></p>
+    <div>
+    <form class="formulario">
+        <label for="adesivosQtde" id="adesivo55">Tamanho 5x5cm - 40 Unidades / A partir de R$9,99</label> <br>
+        <select name="quantidades" id="adesivosQtde" onclick="quantidade55()">
+            <option value="1">40 Unidades</option>
+            <option value="2">80 Unidades</option>
+            <option value="3">120 Unidades</option>
+            <option value="4">160 Unidades</option>
+            <option value="5">200 Unidades</option>
+            <option value="6">240 Unidades</option>
+            <option value="7">280 Unidades</option>
+            <option value="8">320 Unidades</option>
+            <option value="9">360 Unidades</option>
+            <option value="10">400 Unidades</option>
+        </select>
+        <br><br>
+        
+            <button type="button" class="btn btn-1" onclick="addCarrinho()">Adicionar</button>
+            <button type="button" class="btn btn-1" onclick="removeCarrinho()">Remover</button>
+            
+        <br><br>
+        <label>Total: <span id="total5x5">R$0.00</span></label>
+    </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
